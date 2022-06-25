@@ -8,15 +8,16 @@ module.exports = {
     "@remix-run/eslint-config/jest-testing-library",
     "prettier",
   ],
+  plugins: ["prettier"],
   rules: {
     "prettier/prettier": [
       "warn",
       {},
       {
-        "properties": {
-          "usePrettierrc": true
-        }
-      }
+        properties: {
+          usePrettierrc: true,
+        },
+      },
     ],
   },
   // we're using vitest which has a very similar API to jest
